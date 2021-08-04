@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        android:background="#dfe5ff"
+        android:id="@+id/plan1">
+
+    <ImageView
+        android:id="@+id/p1a1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/plan1c1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"/>
+
+    <TextView
+        android:id="@+id/p1plan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="STANDARD PLAN"
+        android:textColor="#2e4bff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/p1a1" />
+
+    <TextView
+        android:id="@+id/p1plan_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="25"
+        android:textColor="#2e4bff"
+        android:textSize="60sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/p1plan_name" />
+
+    <ImageView
+        android:id="@+id/rupee_symbol"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/rupee_symbol"
+        app:layout_constraintLeft_toRightOf="@id/p1plan_price"
+        app:layout_constraintTop_toBottomOf="@id/p1plan_name" />
+
+    <TextView
+        android:id="@+id/p1_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:text="Duration: 1 Month"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/p1plan_price" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API "
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline4"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35sp"
+            android:layout_marginLeft="5sp"
+            android:id="@+id/p1_plan_description"/>
+        <Button
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:textSize="18sp"
+            android:id="@+id/p1_buy"
+            android:backgroundTint="#2e4bff"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="10sp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/plan1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#dfe5ff"
+        android:id="@+id/plan2">
+
+        <ImageView
+            android:id="@+id/p2a1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/plan2c1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline6"/>
+
+        <TextView
+            android:id="@+id/p2plan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="REFERRAL PLAN"
+            android:textColor="#ff2a86"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/p2a1" />
+
+        <TextView
+            android:id="@+id/p2plan_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="49"
+            android:textColor="#ff2a86"
+            android:textSize="60sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/p2plan_name" />
+
+        <ImageView
+            android:id="@+id/rupee_symbol2"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/rupee_symbol"
+            app:layout_constraintLeft_toRightOf="@id/p2plan_price"
+            app:layout_constraintTop_toBottomOf="@id/p2plan_name" />
+
+        <TextView
+            android:id="@+id/p2_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="Duration: 1 Month"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/p2plan_price" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API This is dummy Text from API "
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline6"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35sp"
+            android:layout_marginLeft="5sp"
+            android:id="@+id/p2_plan_description"/>
+        <Button
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:textSize="18sp"
+            android:id="@+id/p2_buy"
+            android:backgroundTint="#ff2a86"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="10sp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
